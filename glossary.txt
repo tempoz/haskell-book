@@ -1,0 +1,23 @@
+Abstraction - the word used in lambda calculus to refer to functions. An abstraction has a head (lambda followed by a variable name), and a body (an expression).
+
+Alpha equivalency - lambda expressions are alpha equivalent if there is no difference between them other than the letters used to represent bound variables.
+
+Beta normal form - a lambda term that cannot be beta reduced any further is said to be in beta normal form.
+
+Beta reduction - the name of process of applying lambda functions to arguments by substituting the arguments for bound variables and removing the lambda. may also be referred to as evaluation, simplification, or, most notably, execution in the context of functional programming languages like haskell.
+
+Call-by-need - an order of evaluation in which a lambda is only evaluated when it is necessary for further evaluation. This is the order used by haskell.
+
+Combinator - a lambda term with no free variables.
+
+Divergent terms - these are lambda terms that never reduce to beta normal form. Attempts to evaluate them result in infinite recursion. A trivial example of a divergent term: (λx.xx)(λx.xx)
+
+Expression - the superset of variables and abstractions.
+
+Lambda term - a lambda term consists of three things: expressions, variables, and abstractions.
+
+Normal order - an order of evaluation that may be used in lambda calculus, in which the lefmost saturated lamba head is evaluated successively until beta normal form is achieved.
+
+Saturation - A function is saturated when all arguments have been applied, but the function has not yet been simplified or evaluated (substitution has not yet occurred)
+
+Variable - this is a symbol stnding in for something else. It is irreducible until something is substituted for it.
