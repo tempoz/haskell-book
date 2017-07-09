@@ -10,6 +10,8 @@ Call-by-need - an order of evaluation in which a lambda is only evaluated when i
 
 Combinator - a lambda term with no free variables.
 
+Currying - the process of applying a series of nested functions to one argument apiece. All functions in haskell take one argument, so when it appears that we are taking multiple arguments we are doing that by currying.
+
 Divergent terms - these are lambda terms that never reduce to beta normal form. Attempts to evaluate them result in infinite recursion. A trivial example of a divergent term: (λx.xx)(λx.xx)
 
 Expression - the superset of variables and abstractions.
