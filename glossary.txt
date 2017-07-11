@@ -18,9 +18,13 @@ Divergent terms - these are lambda terms that never reduce to beta normal form. 
 
 Expression - the superset of variables and abstractions.
 
+Infix notation - when the arguments on either side of a function are passed to the function, like in arithmetic.
+
 Lambda term - a lambda term consists of three things: expressions, variables, and abstractions.
 
 Normal order - an order of evaluation that may be used in lambda calculus, in which the lefmost saturated lamba head is evaluated successively until beta normal form is achieved.
+
+Operator - A function that uses infix notation by default, such as + or *
 
 Parameter - represents a value that will be passed to a function.
 
