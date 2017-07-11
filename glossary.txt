@@ -2,6 +2,8 @@ Abstraction - the word used in lambda calculus to refer to functions. An abstrac
 
 Alpha equivalency - lambda expressions are alpha equivalent if there is no difference between them other than the letters used to represent bound variables.
 
+Argument - a value passed to a function that will be substituted in place of a parameter.
+
 Beta normal form - a lambda term that cannot be beta reduced any further is said to be in beta normal form.
 
 Beta reduction - the name of process of applying lambda functions to arguments by substituting the arguments for bound variables and removing the lambda. may also be referred to as evaluation, simplification, or, most notably, execution in the context of functional programming languages like haskell.
@@ -19,6 +21,8 @@ Expression - the superset of variables and abstractions.
 Lambda term - a lambda term consists of three things: expressions, variables, and abstractions.
 
 Normal order - an order of evaluation that may be used in lambda calculus, in which the lefmost saturated lamba head is evaluated successively until beta normal form is achieved.
+
+Parameter - represents a value that will be passed to a function.
 
 Prelude - a library of standard functions for haskell.
 
