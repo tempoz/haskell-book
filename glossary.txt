@@ -1,3 +1,5 @@
+:: - the couble colon signifies "has the type" in haskell.
+
 Abstraction - the word used in lambda calculus to refer to functions. An abstraction has a head (lambda followed by a variable name), and a body (an expression).
 
 Alpha equivalency - lambda expressions are alpha equivalent if there is no difference between them other than the letters used to represent bound variables.
