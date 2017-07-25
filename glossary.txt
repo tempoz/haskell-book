@@ -1,10 +1,12 @@
-:: - the couble colon signifies "has the type" in haskell.
+:: - the double colon signifies "has the type" in haskell.
 
 Abstraction - the word used in lambda calculus to refer to functions. An abstraction has a head (lambda followed by a variable name), and a body (an expression).
 
 Alpha equivalency - lambda expressions are alpha equivalent if there is no difference between them other than the letters used to represent bound variables.
 
 Argument - a value passed to a function that will be substituted in place of a parameter.
+
+Arity - the number of arguments a function accepts.
 
 Beta normal form - a lambda term that cannot be beta reduced any further is said to be in beta normal form.
 
@@ -15,6 +17,10 @@ Call-by-need - an order of evaluation in which a lambda is only evaluated when i
 Combinator - a lambda term with no free variables.
 
 Currying - the process of applying a series of nested functions to one argument apiece. All functions in haskell take one argument, so when it appears that we are taking multiple arguments we are doing that by currying.
+
+Data constructor - data constructors provide a way to construct values that inhabit a type, and they may accept any number of arguments, including none. As an example, the type Bool has the data constructors True and False, each of which are data constructors accepting 0 arguments.
+
+Data declaration - defines a new datatype. A data declaration will always create a new type constructor, but may or may not define new data constructors. Data declarations begin with the 'data' keyword.
 
 Divergent terms - these are lambda terms that never reduce to beta normal form. Attempts to evaluate them result in infinite recursion. A trivial example of a divergent term: (λx.xx)(λx.xx)
 
@@ -30,6 +36,8 @@ Operator - A function that uses infix notation by default, such as + or *
 
 Parameter - represents a value that will be passed to a function.
 
+Polymorphism - Haskell allows for either parametric or constrained polymorphism. Polymorphism is what is happening when we call functions with different types as arguments.
+
 Prelude - a library of standard functions for haskell.
 
 Redex - short for "reducible expression". Any lambda term that is not in beta normal form (though divergent terms may not be meaningfully reducible).
@@ -37,5 +45,11 @@ Redex - short for "reducible expression". Any lambda term that is not in beta no
 REPL - read-eval-print-loop. one way to run code interactively in a terminal.
 
 Saturation - A function is saturated when all arguments have been applied, but the function has not yet been simplified or evaluated (substitution has not yet occurred)
+
+Type alias - exactly what it sounds like: lets you refer to a type by a different name. 'String' is a type alias of '[Char]'. type aliases begin with the 'type' keyword.
+
+Type constructor - type constructors allow you to construct a type and are only usable in type signatures. They also may accept any number of arguments. For example, in "data Maybe a = Nothing | Just a", "Maybe a" is the type constructor.
+
+Typeclass - A set of operations defined with respect to a polymorphic type. A typeclass defines an interface. Types that implement that interface are said to have an instance of that typeclass.
 
 Variable - this is a symbol stnding in for something else. It is irreducible until something is substituted for it.
